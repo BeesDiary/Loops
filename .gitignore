@@ -1,0 +1,174 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main(){
+    
+    srand(time(0));
+    int randomNumber=rand()%10+1;//generates random number 1-10
+    int userGuess;
+    int attempts=3;
+    while(true){
+        attempts--;
+        cout<<"enter any number between 1 and 10:";
+        cin>>userGuess;
+        if(userGuess==randomNumber){
+            cout<<"congratulations, you won\n";
+            break;
+        }
+        if(attempts==0){
+            cout<<"you lost, it was "<<randomNumber<<endl;
+            break;
+        }
+        
+        cout<<"please try again, you have "<<attempts<<" remaining\n";
+        
+        
+        
+    }
+    
+    
+    //loop that only prints even numbers from 0-100
+    int num=0;
+    while(num<=100){
+        if(num%2==0){
+            cout<<num<<" is even\n";
+        }
+        num++;
+    }
+    
+    //num reached 100
+    num=100;
+    //down counter from 100-10, with interval of 10
+    //100-90-80...
+    while(num>=0){
+        cout<<num<<endl;
+        num-=10;
+    }
+    
+    
+    
+    
+    
+    
+    int counter=1;
+    counter++;//counter=counter+1 or counter+=1
+    counter++;
+    counter++;
+    cout<<counter<<endl;
+    counter--;//counter=counter-1 or same as counter-=1
+    counter--;
+    counter--;
+    counter--;
+    cout<<counter<<endl;
+
+
+    //increment-decrement operations can be achieved two ways, post increment operator and pre increment operator
+    int timer=10;
+    cout<<"post increment"<<(timer++)<<endl;//returns or prints value first, then does increment operation ,, post increment
+    cout<<timer<<endl;
+    cout<<"pre increment"<<++timer<<endl;//increment first then returns or prints value
+    
+    
+    int a=100;
+    cout<<a++<<endl;//100
+    cout<<a++<<endl;//101
+    cout<<a<<endl;//102
+    cout<<++a<<endl;//103
+    
+    cout<<--a<<endl;//102
+    cout<<a--<<endl;//102
+    cout<<++a<<endl;//102
+    cout<<a<<endl;//102
+
+    int b=0;
+    cout<<b++<<endl;//0
+    cout<<b++<<endl;//1
+    cout<<b<<endl;//2
+    
+    cout<<++b<<endl;//3
+    cout<<b<<endl;//3
+    cout<<b--<<endl;//3
+    cout<<b<<endl;//2
+    cout<<--b<<endl;//1
+
+    
+    // int number=10;
+    // while(number>0){
+    //     cout<<"01001#@$%#@#11011##$@#&* ";//statement 1
+    //     cout<<"hello ";//statement 2
+    //     cout<<"how are you ";//statement 3
+    //     number--;
+    // }
+    
+    int number=10;
+    while(number>0){
+        cout<<number<<"hello\t";
+        number--;
+    }
+    cout<<number<<endl;
+    
+    int c=0;
+    while(c>10){
+        cout<<c<<"counting...\n";
+        c++;
+    }
+    cout<<c<<endl;
+    
+    
+    // int d=0;
+    // while(d<20){
+    //     cout<<d<<"hi\n";
+    //     d--;
+    // }
+    
+    int d=0;
+    while(d<=20){
+        cout<<d<<"hi\n";
+        d++;
+    }
+    
+    int x=0;//int x=4;
+    while(x<5){
+        x++;//1
+        cout<<x<<endl;
+    }
+    
+    
+    
+    string fullName="Jane Doe";
+    // cout<<fullName[0]<<endl;
+    // cout<<fullName[1]<<endl;
+    // cout<<fullName[2]<<endl;
+    // cout<<fullName[3]<<endl;
+    // cout<<fullName[4]<<endl;
+    // cout<<fullName[5]<<endl;
+    // cout<<fullName[6]<<endl;
+    // cout<<fullName[7]<<endl;
+    
+    int l=0;
+    while(l<=7){// (1<=fullName.length()-1)
+        cout<<fullName[1]<<endl;
+        l++;
+    }
+    
+    
+    int z=1;
+    while(true){
+        cout<<z;
+        if(z==50){
+            break;
+        }
+        z++;
+        //break;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+}
